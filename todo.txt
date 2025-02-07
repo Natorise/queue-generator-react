@@ -1,0 +1,14 @@
+add editing queues check
+way to add queues check
+
+
+delete queue button check
+
+styling
+mobile support
+
+local storage
+
+pc formatting (100000 -> 100k) (idt we need millions but maybe)
+
+enter when in input to add (copy from todo list)
