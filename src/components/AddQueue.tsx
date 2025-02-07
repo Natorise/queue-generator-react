@@ -20,9 +20,17 @@ const AddQueue = () => {
     setQueueName("")
   }
 
+  const onEnter = (e: React.KeyboardEvent<HTMLInputElement>)=>{
+    if (e.key === "Enter") { 
+      let nextElement = (e.target as HTMLInputElement).nextElementSibling as HTMLButtonElement
+
+      nextElement.click()
+    }
+  }
+
   return (
     <div>
-      <input type="text" placeholder='Queue Name' onChange={e=>{setQueueName(e.target.value)}} value={queueName}/>
+      <input type="text" placeholder='Queue Name' onChange={e=>{setQueueName(e.target.value)}} onKeyDown={onEnter} value={queueName}/>
       <button onClick={addQueue}>Add</button>
     </div>
   )

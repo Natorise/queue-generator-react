@@ -3,13 +3,10 @@ way to add queues check
 delete queue button check
 local storage -- if no stored data we can load preset check
 pc formatting (100000 -> 100k) (idt we need millions but maybe) check
+enter when in input to add (copy from todo list) check
+
 
 styling
 mobile support
-
-
-
-
-enter when in input to add (copy from todo list)
 
 make it so u can click to copy the queue message
