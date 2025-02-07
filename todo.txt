@@ -4,9 +4,12 @@ delete queue button check
 local storage -- if no stored data we can load preset check
 pc formatting (100000 -> 100k) (idt we need millions but maybe) check
 enter when in input to add (copy from todo list) check
+make it so u can click to copy the queue message
 
 
-styling
+styling 
+whe hover over queues message, show button cursor
+some way to know that u can click to copy it like a corner icon or something
+
 mobile support
 
-make it so u can click to copy the queue message
