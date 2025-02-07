@@ -12,3 +12,5 @@ mobile support
 pc formatting (100000 -> 100k) (idt we need millions but maybe)
 
 enter when in input to add (copy from todo list)
+
+make it so u can click to copy the queue message

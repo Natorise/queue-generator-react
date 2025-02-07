@@ -13,12 +13,32 @@ export let QueuesContext = createContext<ContextType>(null!);
 
 const queuess = [
   {
-    name: "rare",
-    count: 20,
+    name: "Rares",
+    count: 30,
   },
   {
-    name: "regional",
-    count: 20,
+    name: "Regionals",
+    count: 18,
+  },
+  {
+    name: "Gmax",
+    count: 18,
+  },
+  {
+    name: "Reserve 1",
+    count: 8,
+  },
+  {
+    name: "Reserve 2",
+    count: 8,
+  },
+  {
+    name: "Reserve 3",
+    count: 8,
+  },  
+  {
+    name: "Eeveelutions",
+    count: 10,
   },
 ];
 
