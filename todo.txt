@@ -2,14 +2,13 @@ add editing queues check
 way to add queues check
 delete queue button check
 local storage -- if no stored data we can load preset check
-
+pc formatting (100000 -> 100k) (idt we need millions but maybe) check
 
 styling
 mobile support
 
 
 
-pc formatting (100000 -> 100k) (idt we need millions but maybe)
 
 enter when in input to add (copy from todo list)
 

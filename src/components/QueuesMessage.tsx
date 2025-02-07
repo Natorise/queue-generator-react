@@ -35,5 +35,14 @@ function formatQueues(queues: QueueType[]) {
 }
  
 function formatQueue(queue: QueueType, incenseOffset: number) {
-  return `**${queue.name} : ${queue.count * incensePrice} (${queue.count * incenseShardPrice} shards) - Channels #${incenseOffset+ 1} to #${incenseOffset + queue.count}**`
+  return `**${queue.name} : ${formatPrice(queue.count * incensePrice)} (${queue.count * incenseShardPrice} shards) - Channels #${incenseOffset+ 1} to #${incenseOffset + queue.count}**`
+}
+
+function formatPrice(price: number) {
+  
+  let formatted = String(price)
+  if(formatted.length >= 7) formatted = formatted.slice(0,-6) + "M"
+  else if(formatted.length >= 4) formatted = formatted.slice(0,-3) + "K"
+  
+  return formatted
 }
