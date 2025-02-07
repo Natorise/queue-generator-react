@@ -22,8 +22,6 @@ const queuess = [
   },
 ];
 
-// typeof queuess
-
 const ContextComponent = ({ children }: React.PropsWithChildren) => {
   const [queues, setQueues] = useState<QueueType[]>(queuess);
 

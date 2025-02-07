@@ -14,7 +14,6 @@ function App() {
           <strong>Queue Generator</strong>
         </p>
         <AddQueue />
-        {/* <div>200 incenses</div>  */}
         <Queues />
         <QueuesMessage />
       </ContextComponent>

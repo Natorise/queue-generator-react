@@ -11,7 +11,6 @@ const Queues = () => {
       {queues.map((queue,index)=>
         <Queue queue={queue} index={index} />
       )}
-      the thing to add another queue
     </div>
   )
 }

@@ -1,13 +1,13 @@
 add editing queues check
 way to add queues check
-
-
 delete queue button check
+local storage -- if no stored data we can load preset
+
 
 styling
 mobile support
 
-local storage
+
 
 pc formatting (100000 -> 100k) (idt we need millions but maybe)
 
