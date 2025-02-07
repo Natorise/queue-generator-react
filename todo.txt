@@ -1,7 +1,7 @@
 add editing queues check
 way to add queues check
 delete queue button check
-local storage -- if no stored data we can load preset
+local storage -- if no stored data we can load preset check
 
 
 styling

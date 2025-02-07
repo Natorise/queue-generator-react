@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export type QueueType = {
   name: string;
@@ -11,7 +11,7 @@ export type ContextType = {queues: QueueType[], setQueues: React.Dispatch<React.
 
 export let QueuesContext = createContext<ContextType>(null!);
 
-const queuess = [
+let queuess = [
   {
     name: "Rares",
     count: 30,
@@ -42,8 +42,16 @@ const queuess = [
   },
 ];
 
+// if not localstorage use default
+const queuesLocalStorage = localStorage.getItem("queues")
+if(queuesLocalStorage) queuess = JSON.parse(queuesLocalStorage)
+
 const ContextComponent = ({ children }: React.PropsWithChildren) => {
   const [queues, setQueues] = useState<QueueType[]>(queuess);
+
+  useEffect(()=>{
+    localStorage.setItem("queues",JSON.stringify(queues))
+  },[queues])
 
   return (
     <QueuesContext.Provider value={{ queues, setQueues }}>
