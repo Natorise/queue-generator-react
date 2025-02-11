@@ -38,7 +38,7 @@ const Queue = ({ queue, index }: { queue: QueueType, index: number }) => {
   return (
     <div className='queue'>
 
-    <input type="text" value={queue.name} onChange={updateName} />
+    <input type="text" value={queue.name} onChange={updateName} placeholder='Queue Name' />
     <input type="range" min="1" max="100" value={queue.count} onChange={updateCount} />
     <button onClick={deleteQueue}>Delete</button>
     </div>
