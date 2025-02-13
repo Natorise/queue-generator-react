@@ -12,11 +12,8 @@ github pages check
 add title, maybe update icon check
 strong on total incense count check
 desktop styling check
-
-
-another thing, if sliding, prevent scrolling 
-
-perhaps the slider should be not white its ugly
+another thing, if sliding, prevent scrolling check
+perhaps the slider should be not white its ugly check
 
 
 bug if u change range too fast it changes back?? only happens in the mobile viewer so idk, ok i tried in my phone and it def happens
