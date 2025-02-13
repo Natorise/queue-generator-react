@@ -3,8 +3,7 @@ import { QueuesContext, QueueType } from "./ContextComponent";
 import { Copy, Check } from "react-bootstrap-icons";
 
 const QueuesMessage = () => {
-
-  const [copied,setCopied] = useState(false)
+  const [copied, setCopied] = useState(false);
 
   const { queues } = useContext(QueuesContext);
   console.log(queues);
@@ -19,9 +18,9 @@ const QueuesMessage = () => {
       .join("\n");
 
     navigator.clipboard.writeText(divValue);
-    setCopied(true)
+    setCopied(true);
 
-    setTimeout(()=>setCopied(false),1000)
+    setTimeout(() => setCopied(false), 1000);
   };
   return (
     <div className="queues-message">
@@ -33,9 +32,11 @@ const QueuesMessage = () => {
         ))}
 
         <div className="copy">
-          {copied ?           <Check color="green" size={25} />
-:           <Copy color="lightgray" size={25} />
-}
+          {copied ? (
+            <Check color="green" size={25} />
+          ) : (
+            <Copy color="lightgray" size={25} />
+          )}
         </div>
       </div>
     </div>

@@ -182,7 +182,6 @@ input[type=range].styled-slider.slider-progress:active::-ms-fill-lower {
   border-color: #c1c1c1;
 }
 
-
 input[type=range].styled-slider { 
   background: rgba(0,0,0,0);
 }
