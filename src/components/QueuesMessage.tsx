@@ -6,8 +6,6 @@ const QueuesMessage = () => {
   const [copied, setCopied] = useState(false);
 
   const { queues } = useContext(QueuesContext);
-  console.log(queues);
-
   const copyText = (e: React.MouseEvent) => {
     let divValue = (e.currentTarget as HTMLDivElement).innerText;
 
