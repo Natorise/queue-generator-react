@@ -22,7 +22,7 @@ const QueuesMessage = () => {
   };
   return (
     <div className="queues-message">
-      <p>{queues.reduce((a, b) => a + b.count, 0)} Total Incenses</p>
+      <p><strong>{queues.reduce((a, b) => a + b.count, 0)} Total Incenses</strong></p>
       &nbsp;
       <div onClick={copyText}>
         {formatQueues(queues).map((x) => (
