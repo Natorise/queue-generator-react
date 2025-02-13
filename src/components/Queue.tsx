@@ -38,6 +38,7 @@ const Queue = ({ queue, index }: { queue: QueueType; index: number }) => {
           value={queue.name}
           onChange={updateName}
           placeholder="Queue Name"
+          size={1}
         />
         <input
           className="styled-slider"
@@ -46,6 +47,7 @@ const Queue = ({ queue, index }: { queue: QueueType; index: number }) => {
           max="100"
           value={queue.count}
           onChange={updateCount}
+          size={1}
         />
       </div>
       <div className="inc-count">

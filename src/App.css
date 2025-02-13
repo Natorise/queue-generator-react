@@ -51,8 +51,8 @@ body {
 }
 
 .inc-count {
-  width: 5%;
   text-align: center;
+  width: 3.5em;
 }
 
 p {
@@ -129,4 +129,50 @@ input[type="range"] {
   top: 5px;
   right: 5px;
   z-index: 1;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .add-queue {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+  }
+  .add-queue input,
+  .add-queue button,
+  .queue input[type="text"],
+  .queue button,
+  .inc-count {
+    font-size: 20px;
+
+  }
+  .add-queue input {
+    margin-right: 5px;
+  }
+
+  .page-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .add-queue,
+  .queue {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .page-content {
+    grid-template-columns: 3fr 1fr;
+    width: 80%;
+  }
+  
 }

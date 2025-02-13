@@ -10,12 +10,17 @@ function App() {
   return (
     <>
       <ContextComponent>
-        <p className="title">
-          <strong>Queue Generator</strong>
-        </p>
-        <AddQueue />
-        <Queues />
-        <QueuesMessage />
+      <p className="title">
+              <strong>Queue Generator</strong>
+            </p>
+
+        <div className="page-content">
+          <div className="left">
+            <AddQueue />
+            <Queues />
+          </div>
+          <QueuesMessage />
+        </div>
       </ContextComponent>
     </>
   );
