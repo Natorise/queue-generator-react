@@ -184,4 +184,5 @@ input[type=range].styled-slider.slider-progress:active::-ms-fill-lower {
 
 input[type=range].styled-slider { 
   background: rgba(0,0,0,0);
+  touch-action: none;
 }

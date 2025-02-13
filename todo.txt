@@ -10,13 +10,13 @@ when hover over queues message, show button cursor check
 some way to know that u can click to copy it like a corner icon or something check
 github pages check
 add title, maybe update icon check
+strong on total incense count check
+desktop styling check
 
-desktop styling 
 
-bug if u change range too fast it changes back?? only happens in the mobile viewer so idk, ok i tried in my phone and it def happens
-
-another thing, if sliding, prevent scrolling
+another thing, if sliding, prevent scrolling 
 
 perhaps the slider should be not white its ugly
 
-strong on total incense count
+
+bug if u change range too fast it changes back?? only happens in the mobile viewer so idk, ok i tried in my phone and it def happens
