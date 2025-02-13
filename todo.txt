@@ -4,12 +4,14 @@ delete queue button check
 local storage -- if no stored data we can load preset check
 pc formatting (100000 -> 100k) (idt we need millions but maybe) check
 enter when in input to add (copy from todo list) check
-make it so u can click to copy the queue message
+make it so u can click to copy the queue message check
+mobile styling check
+when hover over queues message, show button cursor check
+some way to know that u can click to copy it like a corner icon or something check
 
+desktop styling 
+add title, maybe update icon
 
-styling 
-whe hover over queues message, show button cursor
-some way to know that u can click to copy it like a corner icon or something
+bug if u change range too fast it changes back?? only happens in the mobile viewer so idk
 
-mobile support
-
+github pages

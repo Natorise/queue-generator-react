@@ -1,32 +1,157 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 }
 
 
 body {
-  display: flex;
-  justify-content: center;
-font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
 }
+
+#root {
+  width: 100%;
+}
+
 .title {
-  margin: 30px;
+  margin: 20px;
   font-size: 20px;
   text-align: center;
 }
 
+
+.add-queue {
+  display:flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  
+}
+
+
+
+
 .queue {
+  width: calc(95%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px;
+  background-color: #555;
+  padding:5px;
+  border-radius: 10px;
+  margin: 5px auto;
+
+}
+
+
+.queue div {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
-  margin: 20px;
-  background-color: gray;
-  padding: 5px;
 }
-input {
-  /* width: 100%;
-  margin: 0 auto; */
+
+.queue-data {
+  width: 100%;
 
 }
+
+
+.inc-count {
+ width: 5%;
+ text-align: center;
+}
+
+
+
+p {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #444;
+  border-width: 0;
+  cursor: pointer;
+}
+
+
+
+input[type="text"] {
+  border-width: 0;
+  color: white;
+  text-align: center;
+  background-color: #444;
+}
+
+.queue input, .queue button  {
+  margin: 3px;
+
+}
+
+
+
+.add-queue button {
+  background-color: #35f;
+}
+
+input[type="text"], button {
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+
+input[type="range"] {
+  /* background-color: #111;
+  overflow: hidden; */
+  /* padding: 2px; */
+  /* accent-color: green; */
+
+  /* accent-color: rgba(0,0,0,0); */
+  margin: 5px;
+}
+
+
+.delete {
+  background-color: #f30;
+}
+
+
+
+
+.queues-message {
+  width: 95%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+
+}
+.add-queue * { 
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+
+.copy {
+  position:absolute;
+  top:5px;
+  right:5px; 
+  z-index: 1;
+}
+

@@ -1,7 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { QueuesContext, QueueType } from "./ContextComponent";
+import { Copy, Check } from "react-bootstrap-icons";
 
 const QueuesMessage = () => {
+
+  const [copied,setCopied] = useState(false)
+
   const { queues } = useContext(QueuesContext);
   console.log(queues);
 
@@ -9,20 +13,32 @@ const QueuesMessage = () => {
     let divValue = (e.currentTarget as HTMLDivElement).innerText;
 
     // remove extra \n
-    divValue = divValue.split("\n").filter(x=>x).join("\n")
+    divValue = divValue
+      .split("\n")
+      .filter((x) => x)
+      .join("\n");
 
     navigator.clipboard.writeText(divValue);
+    setCopied(true)
+
+    setTimeout(()=>setCopied(false),1000)
   };
   return (
-    <>
+    <div className="queues-message">
       <p>{queues.reduce((a, b) => a + b.count, 0)} Total Incenses</p>
-      <br />
+      &nbsp;
       <div onClick={copyText}>
         {formatQueues(queues).map((x) => (
           <p>{x}</p>
         ))}
+
+        <div className="copy">
+          {copied ?           <Check color="green" size={25} />
+:           <Copy color="lightgray" size={25} />
+}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

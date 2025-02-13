@@ -29,7 +29,7 @@ const AddQueue = () => {
   }
 
   return (
-    <div>
+    <div className="add-queue">
       <input type="text" placeholder='Queue Name' onChange={e=>{setQueueName(e.target.value)}} onKeyDown={onEnter} value={queueName}/>
       <button onClick={addQueue}>Add</button>
     </div>

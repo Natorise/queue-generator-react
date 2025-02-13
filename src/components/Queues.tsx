@@ -7,7 +7,7 @@ const Queues = () => {
   const {queues} = useContext(QueuesContext)
 
   return (
-    <div>
+    <div className='queues'>
       {queues.map((queue,index)=>
         <Queue queue={queue} index={index} />
       )}

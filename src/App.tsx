@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./range-input.css";
 import Queues from "./components/Queues";
 
 import ContextComponent from "./components/ContextComponent";

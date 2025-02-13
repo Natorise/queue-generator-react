@@ -37,10 +37,15 @@ const Queue = ({ queue, index }: { queue: QueueType, index: number }) => {
 
   return (
     <div className='queue'>
+    <button className="delete" onClick={deleteQueue}>Delete</button>
 
-    <input type="text" value={queue.name} onChange={updateName} placeholder='Queue Name' />
-    <input type="range" min="1" max="100" value={queue.count} onChange={updateCount} />
-    <button onClick={deleteQueue}>Delete</button>
+    <div className='queue-data'>
+    <input className="queue-input" type="text" value={queue.name} onChange={updateName} placeholder='Queue Name' />
+    <input className="styled-slider" type="range" min="1" max="100" value={queue.count} onChange={updateCount} />
+    </div>
+    <div className='inc-count'>
+      <p>{queue.count}</p>
+    </div>
     </div>
   )
 }
