@@ -166,6 +166,10 @@ input[type="range"] {
   .queue {
     width: 100%;
   }
+
+  .queue:last-child {
+    margin-bottom:0;
+  }
 }
 
 
